@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --Neutral-Colors-White: #FFFFFF;
+  --Platform-Aliases-Texto-base: #C4C4CC;
+  --Platform-Aliases-Ttulos: #E1E1E6;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.6rem;
+  
+  padding: 4rem 7.2rem;
+  height: 100vh;
+}
+
+.bg-home {
+  background: url('./assets/mountains-universe-1.svg'), lightgray 50% / cover no-repeat;
+  background-size: 100%;
+}
+
+.bg-universe {
+  background: url('./assets/mountains-universe-2.svg'), lightgray 50% / cover no-repeat;
+  background-size: 100%;
+}
+
+.bg-explorer {
+  background: url('./assets/mountains-universe-3.svg'), lightgray 50% / cover no-repeat;
+  background-size: 100%;
+}
+
+nav, #app {
+  width: 128rem;
+  margin: 0 auto;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  gap: 3.2rem;
+
+  margin-bottom: 6.3rem;
+}
+
+nav a {
+  color: var(--Platform-Aliases-Texto-base);
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 2.1rem;
+  text-decoration: none;
+}
+
+.selected {
+  color: var(--Neutral-Colors-White);
+  font-size: 3.2rem;
+}
+
+nav a:hover {
+  color: var(--Neutral-Colors-White);
+}
+
+h1 {
+  color: var(--Neutral-Colors-White);
+  font-size: 4.8rem;
+  font-weight: 700;
+  line-height: 6rem;
+}
+
+p {
+  color: var(--Platform-Aliases-Ttulos);
+  font-size: 1.8rem;
+  font-weight: 400;
+  line-height: 2.8rem;
+  margin-top: 1.6rem;
+  width: 64.8rem;
+}
+
+#home {
+  display: grid;
+  place-content: center;
+
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+
+  margin-top: 17.2rem;
+
+}
+
+button {
+  background: transparent;
+  border: .2rem solid #FFF;
+  color: var(--Neutral-Colors-White);
+  text-align: center;
+  font-family: 'Roboto';
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 2.4rem;
+  text-transform: uppercase;
+
+  padding: 1.2rem;
+  border-radius: .5rem;
+  width: 19.5rem;
+
+  margin-top: 2.4rem;
+
+  cursor: pointer;
+}
+
+button:hover {
+  background: #FFF;
+  color: #02799D;
+}
